@@ -1,0 +1,111 @@
+
+body {
+  font-family: 'Fira Sans', 'Arial', sans-serif;
+  color: #141414;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p, li, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+}
+
+/* Global Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  padding: 2.5rem 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+}
+
+/* Textos */
+
+.sub-titulo {
+  max-width: 4ch;
+  word-break: break-all;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.texto-padrao {
+  margin-bottom: 3rem;
+  max-width: 50ch;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.texto-padrao-pequeno {
+  max-width: 50ch;
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #525252;
+}
+
+/* Detalhes */
+
+.underline {
+  text-decoration: underline;
+  color: #000;
+}
+
+.detalhe-verde::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(180deg, #B6F829 0%, #67DD0A 100%);
+}
+
+.detalhe-icone::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -40px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Global - Media */
+
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .sub-titulo {
+    max-width: initial;
+    word-break: initial;
+    font-size: 2.5rem;
+  }
+  .texto-padrao, .texto-padrao-pequeno {
+    max-width: initial;
+  }
+}

@@ -1,0 +1,143 @@
+.formacao-cover {
+  background: #141414;
+}
+
+.formacao-container {
+  color: #fff;
+  padding: 10rem 1.25rem;
+  margin: 0 auto;
+}
+
+.formacao-container .sub-titulo {
+  max-width: 5ch;
+  color: #000;
+}
+
+.formacao-container .texto-padrao {
+  color: #A3A3A3;
+}
+
+.formacao-container strong {
+  color: #fff;
+}
+
+/* formacao-lista */
+
+.formacao-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formacao-box {
+  background: #090909;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.formacao-tipo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  color: #A3A3A3;
+}
+
+.formacao-nome {
+  position: relative;
+  flex: 1;
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+.formacao-nome.detalhe-verde::before {
+  top: 0;
+  left: -20px;
+}
+
+.formacao-faculdade {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  color: #A3A3A3;
+}
+
+/* Formação Extra - Cursos */
+
+.cursos-extras, .idiomas {
+  margin-bottom: 1.2rem;
+}
+
+.curso-titulo {
+  margin-bottom: 1rem;
+  position: relative;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #8F8F8F;
+}
+
+.cursos-extras .curso-titulo.detalhe-icone::before {
+  background: url(../img/cursos.svg) no-repeat;
+}
+
+.idiomas .curso-titulo.detalhe-icone::before {
+  background: url(../img/idiomas.svg) no-repeat;
+}
+
+.cursos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cursos-extras .cursos-lista li:hover {
+  color: #a8f;
+  text-decoration: underline;
+}
+
+.cursos-lista span {
+  display: inline-block;
+  color: #8F8F8F;
+}
+
+/* Idioma */
+
+.cursos-extras .cursos-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media */
+
+@media (max-width: 1000px) {
+
+  .formacao-container {
+    padding: 4rem 1.25rem;
+  }
+
+  .formacao-container .sub-titulo {
+    color: #fff;
+  }
+  .curso-titulo.detalhe-icone::before {
+    display: block;
+    position: static;
+    margin-bottom: .5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .formacao-lista {
+    flex-direction: column;
+  }
+}

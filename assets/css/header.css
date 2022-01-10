@@ -1,0 +1,43 @@
+
+.header {
+  max-width: 75rem;
+  margin: 2rem auto 5.625rem auto;
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu a {
+  color: #141414;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background: linear-gradient(180deg, #B6F829 0%, #67DD0A 100%);
+}
+
+@media (max-width: 800px) {
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+  }
+
+  .menu a {
+    background: #f5f5f5;
+  }
+
+}
