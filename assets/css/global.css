@@ -5,6 +5,20 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 18px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #B6F829 0%, #67DD0A 100%);
+  border-left: 4px solid #B6F829;
+  border-right: 4px solid #67DD0A;
+}
+
+body::-webkit-scrollbar-track {
+  background: #141414;
+}
+
 h1, h2, h3, h4, p, li, ul {
   margin: 0;
   padding: 0;
@@ -24,6 +38,7 @@ img {
   display: block;
   height: 100%;
 }
+
 
 /* Global Styles */
 
