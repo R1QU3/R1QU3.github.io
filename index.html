@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -26,22 +28,22 @@
   <!-- Header - Menu -->
   <header class="header">
     <a rel="noreferrer" href="https://github.com/r1qu3/" target="_blank">
-      <img src="./assets/img/R1QU3.svg" alt="rique Github" width="107" height="33">
+      <img src="./assets/img/R1QU3.svg" alt="Github" width="107" height="33" data-aos="zoom-in">
     </a>
     <!-- Menu -->
     <nav>
-      <ul class="menu">
-        <li><a href="#experiencia">Expêriencia</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
+      <ul class="menu js-menu">
+        <li><a href="#experiencia" data-aos="zoom-in" data-aos-duration="1000">Expêriencia</a></li>
+        <li><a href="#formacao" data-aos="zoom-in" data-aos-duration="1000">Formação</a></li>
+        <li><a href="#contato" data-aos="zoom-in" data-aos-duration="1000">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main -->
-  <main class="container introducao-container">
-    <img src="./assets/img/perfil2.png" alt="Foto de Perfil" width="360" height="520">
-    <header>
+  <main class="container introducao-container js-scrollAnimation">
+    <img src="./assets/img/perfil.png" alt="Foto de Perfil" width="360" height="520" data-aos="zoom-in">
+    <header data-aos="zoom-in">
       <h1>
         Desenvolvedor <br> Front-End & <br> UX/UI Designer
       </h1>
@@ -52,23 +54,23 @@
   </main>
 
   <!-- Section - Expêriencia -->
-  <section aria-label="Expêriencia" id="experiencia" class="container experiencia-container">
+  <section aria-label="Expêriencia" id="experiencia" class="container experiencia-container js-scrollAnimation">
     <!-- Subtitulo -->
-    <h2 class="sub-titulo">
+    <h2 class="sub-titulo" data-aos="fade-down-right">
       Expêriencia
     </h2>
     <div>
 
       <!-- Apresentação - Paragrafo -->
-      <p class="texto-padrao">
-        Desenvolvo projetos como o Bikcraft utilizando apenas <strong>HTML</strong>, <strong>CSS</strong> e
-        <strong>JavaScript</strong>. Para aplicativos web onde trabalho no
+      <p class="texto-padrao" data-aos="fade-right">
+        Desenvolvo projetos  utilizando <strong>HTML</strong>, <strong>CSS</strong>,
+        <strong>JavaScript</strong> e <strong>Vue.JS</strong>. Para aplicativos web onde trabalho no
         <strong>UX</strong> e <strong>UI Design</strong> dos <em>projetos</em>.
       </p>
       <!-- Empresas - Lista -->
       <ul class="empresas">
         <!-- MeloDesign -->
-        <li class="empresa">
+        <li class="empresa" data-aos="zoom-out" data-aos-duration="500">
           <div class="texto-padrao-pequeno empresa-ano">2021 - 2022</div>
           <h3 class="empresa-titulo detalhe-verde">
             MeloDesign
@@ -97,7 +99,7 @@
         </li>
 
         <!-- SA Tecnologia -->
-        <li class="empresa">
+        <li class="empresa" data-aos="zoom-out" data-aos-duration="500">
           <div class="texto-padrao-pequeno empresa-ano">2021</div>
           <h3 class="empresa-titulo detalhe-verde">
             SA Tecnologia
@@ -130,13 +132,13 @@
 
   <div class="formacao-cover">
     <!-- Section - Formação -->
-    <section aria-label="Formação" id="formacao" class="container formacao-container">
+    <section aria-label="Formação" id="formacao" class="container formacao-container js-scrollAnimation">
       <!-- Sub-Titulo -->
-      <h2 class="sub-titulo">
+      <h2 class="sub-titulo" data-aos="fade-down-right">
         Formação
       </h2>
       <div>
-        <p class="texto-padrao">
+        <p class="texto-padrao" data-aos="fade-right">
           Minha mais recente experiência acadêmica foi a <strong>Graduação</strong> 🎓 que fiz em <strong>Analise e
             Desenvolvimento de sistamas</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
         </p>
@@ -144,7 +146,7 @@
         <ul class="formacao-lista">
 
           <!-- Graduação -->
-          <li class="formacao-box">
+          <li class="formacao-box" data-aos="zoom-in">
             <span class="formacao-tipo">
               Graduação
             </span>
@@ -159,13 +161,14 @@
         </ul>
 
         <!-- Formação Extra -->
-        <div class="cursos-extras">
+        <div class="cursos-extras" data-aos="fade-right">
           <h4 class="curso-titulo detalhe-icone">Cursos Intensivos</h4>
           <ul class="cursos-lista">
-            <li title="Instituição: Origamid">UX Design & UI Design <span>56h</span></li>
-            <li title="Instituição: Origamid">Front End para Iniciantes <span>72h</span></li>
-            <li title="Instituição: Google">Web Development | [HTML & CSS] <span>80h</span></li>
-            <li title="Instituição: IMED">OTechTaOn <span>40h</span></li>
+            <li title="Instituição: Origamid" data-aos="fade-right" data-aos-duration="1000">UI Design <span>17h</span></li>
+            <li title="Instituição: Origamid" data-aos="fade-right" data-aos-duration="1200">HTML5 & CSS3 <span>23h</span></li>
+            <li title="Instituição: Origamid" data-aos="fade-right" data-aos-duration="1400">JavaScriptES6 <span>37h</span></li>
+            <li title="Instituição: Google" data-aos="fade-right" data-aos-duration="1600">Web Development |<span>80h</span></li>
+            <li title="Instituição: IMED" data-aos="fade-right" data-aos-duration="1700">OTechTaOn <span>40h</span></li>
           </ul>
         </div>
 
@@ -173,8 +176,8 @@
         <div class="idiomas">
           <h4 class="curso-titulo detalhe-icone">Idiomas</h4>
           <ul class="cursos-lista">
-            <li>Inglês <span>/ Básico</span></li>
-            <li>Espanhol <span>/ Básico</span></li>
+            <li data-aos="fade-right" data-aos-duration="1000">Inglês <span>/ Básico</span></li>
+            <li data-aos="fade-right" data-aos-duration="1200">Espanhol <span>/ Básico</span></li>
           </ul>
         </div>
 
@@ -183,18 +186,18 @@
   </div>
 
   <div class="footer-cover">
-    <footer id="contato">
-      <p class="texto-padrao">
+    <footer class="js-scrollAnimation" id="contato">
+      <p class="texto-padrao" data-aos="zoom-in">
         Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋
       </p>
       <ul class="footer-contato">
         <li>
-          <a href="mailto:josehenriquehyttspf@gmail.com">
+          <a href="mailto:josehenriquehyttspf@gmail.com"  data-aos="flip-up">
             josehenriquehyttspf@gmail.com
           </a>
         </li>
         <li>
-          <a href="tel:81991186867">
+          <a href="tel:81991186867" data-aos="flip-up">
             +55 81 99118-6867
           </a>
         </li>
@@ -205,6 +208,17 @@
     </footer>
   </div>
 
+  <script src="./assets/js/script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- AOS Config -->
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      disable: 'phone',
+      useClassNames: true,
+    });
+  </script>
 </body>
 
 </html>
