@@ -1,6 +1,6 @@
 /* Scroll */
 function initScrollSmooth() {
-  const links = document.querySelectorAll('.js-menu a[href^="#"]')
+  const links = document.querySelectorAll('.js .js-menu a[href^="#"]')
   if (links.length) {
     function scrollToLink(event) {
       event.preventDefault();

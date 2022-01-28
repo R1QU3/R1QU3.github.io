@@ -16,18 +16,21 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Portifolio</title>
   <!-- Style -->
+  <link rel="preload" href="./assets/css/style.min.css" as="style"> 
   <link rel="stylesheet" href="./assets/css/style.min.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
   <!-- AOS -->
+  <link rel="preconnect" href="https://unpkg.com/aos@next/dist/aos.css" as="style"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body>
@@ -48,7 +51,7 @@
   </header>
 
   <!-- Main -->
-  <main class="container introducao-container js-scrollAnimation">
+  <main class="container introducao-container ">
     <img src="./assets/img/perfil.png" alt="Foto de Perfil" width="360" height="520" data-aos="zoom-in">
     <header data-aos="zoom-in">
       <h1>
@@ -61,7 +64,7 @@
   </main>
 
   <!-- Section - Expêriencia -->
-  <section aria-label="Expêriencia" id="experiencia" class="container experiencia-container js-scrollAnimation">
+  <section aria-label="Expêriencia" id="experiencia" class="container experiencia-container ">
     <!-- Subtitulo -->
     <h2 class="sub-titulo" data-aos="fade-down-right">
       Expêriencia
@@ -139,7 +142,7 @@
 
   <div class="formacao-cover">
     <!-- Section - Formação -->
-    <section aria-label="Formação" id="formacao" class="container formacao-container js-scrollAnimation">
+    <section aria-label="Formação" id="formacao" class="container formacao-container ">
       <!-- Sub-Titulo -->
       <h2 class="sub-titulo" data-aos="fade-down-right">
         Formação
@@ -197,7 +200,7 @@
   </div>
 
   <div class="footer-cover">
-    <footer class="js-scrollAnimation" id="contato">
+    <footer aria-label="Contato" id="contato">
       <p class="texto-padrao" data-aos="zoom-in">
         Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋
       </p>
@@ -226,7 +229,6 @@
     AOS.init({
       duration: 800,
       once: true,
-      disable: 'phone',
       useClassNames: true,
     });
   </script>
