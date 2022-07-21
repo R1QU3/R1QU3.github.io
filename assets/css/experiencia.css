@@ -27,6 +27,7 @@
 }
 
 .empresa {
+  width: 100%;
   position: relative;
   display: grid;
   place-content: start;
