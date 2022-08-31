@@ -1,5 +1,7 @@
 .formacao-cover {
   background: #141414;
+  background-image: url(../img/waves.svg);
+  background-attachment: fixed;
 }
 
 .formacao-container {
@@ -10,7 +12,7 @@
 
 .formacao-container .sub-titulo {
   max-width: 5ch;
-  color: #000;
+  color: #fff;
 }
 
 .formacao-container .texto-padrao {
