@@ -1,5 +1,5 @@
 /* Scroll */
-function initScrollSmooth() {
+export default function ScrollSmooth() {
   const links = document.querySelectorAll('.js .js-menu a[href^="#"]')
   if (links.length) {
     function scrollToLink(event) {
@@ -16,4 +16,3 @@ function initScrollSmooth() {
     })
   }
 }
-initScrollSmooth()
