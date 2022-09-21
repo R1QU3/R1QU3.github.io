@@ -1,7 +1,8 @@
 .formacao-cover {
-  background: #141414;
-  background-image: url(../img/waves.svg);
-  background-attachment: fixed;
+  background: #151515;
+  background-image: url(../img/grid-2.svg);
+  background-repeat: repeat;
+  inset: 0;
 }
 
 .formacao-container {

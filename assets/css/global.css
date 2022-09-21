@@ -3,9 +3,15 @@ body {
   font-family: 'Fira Sans', 'Arial', sans-serif;
   color: #141414;
   margin: 0;
-  background-image: url(../img/background/r1qu3_abstract_background.jpg);
+  background-image: url(../img/background/background_beams.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
+}
+
+.bg-wrapper {
+  background-image: url(../img/grid.svg);
+  background-repeat: repeat;
+  inset: 0;
 }
 
 body::-webkit-scrollbar {
