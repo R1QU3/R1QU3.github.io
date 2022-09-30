@@ -147,5 +147,6 @@ img {
 @media (min-width: 768px) {
   html {
     cursor: url('../img/Mouse.png'), default;
+    cursor: url('../img/MouseActive.png'), pointer;
   }
 }
